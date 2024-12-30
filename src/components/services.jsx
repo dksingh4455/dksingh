@@ -13,7 +13,7 @@ const services = () => {
               className="text-[40px]  font-semibold
 "
             >
-              Organic Farm
+              Farmhouse
             </h1>
             <h2
               className="text-[40px] font-semibold
@@ -25,8 +25,9 @@ const services = () => {
               className=" text-balance
  py-[10px] grid items-center text-[16px] "
             >
-              Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et
-              tempor sit. Clita erat ipsum et lorem et sit sed stet labore
+              South Delhi is known for its upscale lifestyle and serene
+              ambiance, making it an ideal location for luxurious farmhouses.
+              Whether you&nbsp;re planning a weekend retreat
             </p>
             <div className="py-[10px] ">
               <button className=" text-[16px]  bg-[#34AD54] p-4 py-[6px]  font-light text-white px-4  cursor-pointer hover:text-black">
@@ -53,7 +54,7 @@ const services = () => {
             <h1 className="text-[26px]  text-center mt-2">Sale</h1>
             <p className="text-balance   text-center grid items-center p-3">
               If you’re planning to sell your farmhouse, we’ll connect you with
-              the right buyers 
+              the right buyers
             </p>
           </div>
         </div>
