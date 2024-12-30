@@ -5,9 +5,9 @@ const Footer = () => {
           {/* Get In Touch Section */}
           <div>
             <h3 className="font-bold text-lg mb-4">Get In Touch</h3>
-            <p className="text-sm">123 Street, New York, USA</p>
-            <p className="text-sm">info@example.com</p>
-            <p className="text-sm">+012 345 67890</p>
+            <p className="text-sm">Plot no. 6-B, Top Floor, Nalson, Nelson Mandela Marg, opp. B-11, Pocket 8, Sector D, Vasant Kunj, New Delhi, Delhi 110075</p>
+            <p className="text-sm">gitin@rpgestate.in</p>
+            <p className="text-sm">+91 98101 50047</p>
             <div className="flex space-x-4 mt-4">
               <a
                 href="#"
