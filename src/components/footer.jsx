@@ -88,15 +88,15 @@ const Footer = () => {
         {/* Bottom Footer Section */}
         <div className="bg-gray-800 text-center text-sm text-white py-4 mt-8">
           <p>
-            © Your Site Name. All Rights Reserved. Designed by{" "}
+            All Rights Reserved. Designed by{" "}
             <a href="#" className="text-orange-500 hover:underline">
-              HTML Codex
+              Deepak Singh
             </a>
           </p>
           <p>
             Distributed By{" "}
             <a href="#" className="text-orange-500 hover:underline">
-              ThemeWagon
+              Deepak Singh
             </a>
           </p>
         </div>
