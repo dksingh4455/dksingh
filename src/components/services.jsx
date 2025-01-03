@@ -1,8 +1,16 @@
+"use client"
 import React from "react";
 import { PiSirenThin } from "react-icons/pi";
 import { FcSalesPerformance } from "react-icons/fc";
-
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 const services = () => {
+  const [message,setMessage]=useState('')
+  const router=useRouter();
+  const handleClcik=()=>{
+    setMessage('cick');
+    router.push('/contact')
+  }
   return (
     <>
       <div className="">
@@ -30,7 +38,7 @@ const services = () => {
               Whether you&nbsp;re planning a weekend retreat
             </p>
             <div className="py-[10px] ">
-              <button className=" text-[16px]  bg-[#34AD54] p-4 py-[6px]  font-light text-white px-4  cursor-pointer hover:text-black">
+              <button onClick={handleClcik} className=" text-[16px]  bg-[#34AD54] p-4 py-[6px]  font-light text-white px-4  cursor-pointer hover:text-black">
                 Contact Us
               </button>
             </div>

@@ -5,8 +5,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function FullScreenCarousel() {
+  const [message,setMessage]=useState('');
+  const router =useRouter();
+  const handleClcik=()=>{
+    setMessage('clicked');
+    router.push('/contact')
+  }
   return (
     <div className="w-full md:h-screen">
       <Swiper
@@ -39,7 +47,7 @@ export default function FullScreenCarousel() {
                 <button className="bg-green-600 text-white px-6 py-3 text-base md:text-lg rounded hover:bg-green-700 transition">
                   Explore
                 </button>
-                <button className="bg-orange-500 text-white px-6 py-3 text-base md:text-lg rounded hover:bg-orange-600 transition">
+                <button onClick={handleClcik} className="bg-orange-500 text-white px-6 py-3 text-base md:text-lg rounded hover:bg-orange-600 transition">
                   Contact
                 </button>
               </div>
@@ -70,7 +78,7 @@ export default function FullScreenCarousel() {
                 <button className="bg-green-600 text-white px-6 py-3 text-base md:text-lg rounded hover:bg-green-700 transition">
                   Explore
                 </button>
-                <button className="bg-orange-500 text-white px-6 py-3 text-base md:text-lg rounded hover:bg-orange-600 transition">
+                <button onClick={handleClcik} className="bg-orange-500 text-white px-6 py-3 text-base md:text-lg rounded hover:bg-orange-600 transition">
                   Contact
                 </button>
               </div>

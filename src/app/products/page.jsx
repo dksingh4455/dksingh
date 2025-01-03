@@ -1,8 +1,17 @@
+"use client"
 import React from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Navbar from "@/components/navbar";
 import Choose from "@/components/choose"
 import Cardsnew from "@/components/cardsnew"
 const Products = () => {
+  const [message,setMessage]=useState('')
+  const router =useRouter();
+  const handleClcik=()=>{
+    setMessage('clecked');
+    router.push('/')
+  }
   return (
     <>
       <Navbar />
@@ -13,15 +22,15 @@ const Products = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-start justify-center h-full max-w-screen-lg mx-auto px-6">
         {/* Title */}
-        <h1 className="text-white text-6xl font-bold mb-6">About Us</h1>
+        <h1 className="text-white text-6xl font-bold mb-6">Why Coose us</h1>
 
         {/* Buttons */}
         <div className="flex gap-4">
-          <button className="px-6 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-600">
+          <button onClick={handleClcik} className="px-6 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-600">
             Home
           </button>
           <button className="px-6 py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-orange-600">
-            About Us
+            Why Coose us
           </button>
         </div>
       </div>

@@ -5,10 +5,10 @@ const Counter = () => {
   const [hasStarted, setHasStarted] = useState(false);
 
   const counters = [
-    { id: 1, label: "Our Experience", target: 12345, icon: "⭐" },
-    { id: 2, label: "Farm Specialist", target: 12345, icon: "👥" },
-    { id: 3, label: "Complete Project", target: 12345, icon: "✔️" },
-    { id: 4, label: "Happy Clients", target: 12345, icon: "☕" },
+    { id: 1, label: "Our Experience", target: 100, icon: "⭐" },
+    { id: 2, label: "Farm Specialist", target: 50, icon: "👥" },
+    { id: 3, label: "Complete Project", target: 300, icon: "✔️" },
+    { id: 4, label: "Happy Clients", target: 1000, icon: "☕" },
   ];
 
   useEffect(() => {

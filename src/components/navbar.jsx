@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import Link from 'next/link';
 import menuItems from './menuItems';
-
+import Image from 'next/image';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,9 @@ const Navbar = () => {
  <nav className="bg-[#34AD54] text-white border border-slate-200 fixed w-full z-10 top-0">
       <div className="max-w-[1240px] container mx-auto px-2 py-[20px] flex justify-between items-center text-white">
         <div className="text-2xl font-bold">
-          <Link href="/">GitinSuri</Link>
+          <Link href="/">
+         <Image src="/logo2.png" className='text-white' width={150} height={150} alt="logo"/>
+          </Link>
           {/* <Image src="/logos.png" height={80} width={80} /> */}
         </div>
         

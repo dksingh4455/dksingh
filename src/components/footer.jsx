@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 const Footer = () => {
     return (
       <footer className="bg-green-500 text-white pt-12">
@@ -44,12 +47,12 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li>→ Home</li>
-              <li>→ About Us</li>
-              <li>→ Our Services</li>
-              <li>→ Meet The Team</li>
-              <li>→ Latest Blog</li>
-              <li>→ Contact Us</li>
+              <li><Link href="/">→ Home</Link></li>
+              <li><Link href="about">→ About Us </Link></li>
+              <li><Link href="services">→ Our Services</Link></li>
+              <li><Link href="/">→ Meet The Team</Link></li>
+              <li><Link href="blog">→ Latest Blog</Link></li>
+              <li><Link href="contact">→ Contact Us</Link></li>
             </ul>
           </div>
   
@@ -57,12 +60,12 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Popular Links</h3>
             <ul className="space-y-2 text-sm">
-              <li>→ Home</li>
-              <li>→ About Us</li>
-              <li>→ Our Services</li>
-              <li>→ Meet The Team</li>
-              <li>→ Latest Blog</li>
-              <li>→ Contact Us</li>
+            <li><Link href="/">→ Home</Link></li>
+              <li><Link href="about">→ About Us </Link></li>
+              <li><Link href="services">→ Our Services</Link></li>
+              <li><Link href="/">→ Meet The Team</Link></li>
+              <li><Link href="blog">→ Latest Blog</Link></li>
+              <li><Link href="contact">→ Contact Us</Link></li>
             </ul>
           </div>
   
